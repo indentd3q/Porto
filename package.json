@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "gsap": "^3.12.5",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^2.2.19"
+  }
+}
