@@ -5,8 +5,11 @@ import Projects from './components/Projects';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { useAnimations } from './animations';
 
 function App() {
+  useAnimations();
+
   return (
     <div className="App">
       <Header />
