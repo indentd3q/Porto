@@ -1,26 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import about from './About';
+import backgroundImage from './background.jpg';
 
 const Landing = () => {
+    const backgroundImage = require('./background.jpg');
     return (
         <div>
-            <header className="fixed top-0 left-0 w-full py-4 md:py-8 px-6 md:px-24 flex justify-between items-center z-50 bg-white shadow-md">
-                <h2 className="text-xl md:text-2xl text-gray-700 cursor-default">
-                    <span className="text-purple-600">V</span>K
-                </h2>
-                <nav className="hidden md:flex ml-[-300px]">
-                    <Link to="/" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600">Home</Link>
-                    <Link to="/about" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600">About</Link>
-                    <Link to="/projects" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600">Portfolio</Link>
-                    <Link to="/blog" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600">Blog</Link>
-                    <Link to="/contact" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600">Contact</Link>
-                </nav>
-                <Link to="/contact" className="text-white no-underline py-1 md:py-2 px-6 md:px-14 bg-purple-600 rounded-lg border-2 border-purple-600 font-medium transition duration-300 hover:text-purple-600 hover:bg-transparent">Let's Talk</Link>
-            </header>
-
-            <section className="relative w-full h-screen bg-cover bg-center flex items-center px-6 md:px-24" style={{ backgroundImage: "url('background.jpg')" }}>
+            <header className="fixed top-0 left-0 w-full py-4 md:py-8 px-6 md:px-24 flex justify-between items-center z-50  ">
+            <h2 className="text-xl md:text-2xl text-gray-700 cursor-default">
+                <span className="text-purple-600">V</span>K
+            </h2>
+            <nav className="hidden md:flex ml-[-300px]">
+                <Link to="/" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600">Home</Link>
+                <Link to="/about" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600">About</Link>
+                <Link to="/projects" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600">Portfolio</Link>
+                <Link to="/blog" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600">Blog</Link>
+                <Link to="/contact" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600">Contact</Link>
+            </nav>
+            <Link to="/contact" className="text-white no-underline py-1 md:py-2 px-6 md:px-14 bg-purple-600 rounded-lg border-2 border-purple-600 font-medium transition duration-300 hover:text-purple-600 hover:bg-transparent">Let's Talk</Link>
+            </header>   
+            <section className="relative w-full h-screen bg-cover bg-center flex items-center px-6 md:px-24" style={{ backgroundImage: "url('./background.jpg')" }}>
                 <div className="max-w-lg md:max-w-xl text-gray-700">
                     <h2 className="text-2xl md:text-3xl"><span className="text-purple-600">Hi, I'm</span> Vincent Kurniawan</h2>
                     <h4 className="text-xl md:text-2xl">Frontend Developer</h4>
