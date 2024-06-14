@@ -5,21 +5,15 @@ import Projects from './components/Projects';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Landing from './components/Landing';
 import { useAnimations } from './animations';
 
 function App() {
-  useAnimations();
 
   return (
     <div className="App">
-      <Header />
-      <main className="container mx-auto p-4">
-        <About />
-        <Projects />
-        <Blog />
-        <Contact />
-      </main>
-      <Footer />
+      <Landing />
+      
     </div>
   );
 }

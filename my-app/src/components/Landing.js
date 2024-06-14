@@ -1,12 +1,12 @@
 import React from 'react';
-import { FaLinkedinIn, FaFacebookF, FaTwitter } from 'react-icons/fa';
+import { FaLinkedinIn, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Landing = () => {
     return (
         <div>
-            <header className="fixed top-0 left-0 w-full py-8 px-24 flex justify-between items-center z-100 bg-white shadow-md">
+            <header className="fixed top-0 left-0 w-full py-8 px-24 flex justify-between items-center z-50 bg-white shadow-md">
                 <h2 className="text-2xl text-gray-700 cursor-default">
-                    <span className="text-purple-600">J</span>oe.
+                    <span className="text-purple-600">V</span>K
                 </h2>
                 <nav className="ml-[-300px]">
                     <a href="#" className="text-lg text-gray-700 no-underline mr-10 font-medium transition duration-300 hover:text-purple-600">Home</a>
@@ -28,8 +28,12 @@ const Landing = () => {
                         <a href="#" className="text-purple-600 no-underline py-2 px-8 bg-transparent rounded-lg border-2 border-purple-600 font-medium transition duration-300 ml-7 hover:text-white hover:bg-purple-600">See Projects</a>
                     </div>
                     <div className="absolute bottom-12 flex">
-                        <a href="#" className="w-9 h-9 bg-purple-600 rounded-full mr-6 flex justify-center items-center border border-white outline outline-2 outline-purple-600 transition duration-300 hover:translate-y-[-5px]"><FaLinkedinIn className="text-white" /></a>
-                        <a href="#" className="w-9 h-9 bg-purple-600 rounded-full mr-6 flex justify-center items-center border border-white outline outline-2 outline-purple-600 transition duration-300 hover:translate-y-[-5px]"><FaFacebookF className="text-white" /></a>
+                        <a href="https://www.linkedin.com/in/vincent-kurniawan" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-purple-600 rounded-full mr-6 flex justify-center items-center border border-white outline outline-2 outline-purple-600 transition duration-300 hover:translate-y-[-5px]">
+                            <FaLinkedinIn className="text-white" />
+                        </a>
+                        <a href="https://www.instagram.com/vincent__nwn" className="w-9 h-9 bg-purple-600 rounded-full mr-6 flex justify-center items-center border border-white outline outline-2 outline-purple-600 transition duration-300 hover:translate-y-[-5px]">
+                            <FaInstagram className="text-white" />
+                        </a>
                     </div>
                 </div>
             </section>
