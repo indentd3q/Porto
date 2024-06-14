@@ -1,38 +1,39 @@
 import React from 'react';
-import { FaLinkedinIn, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 const Landing = () => {
     return (
         <div>
-            <header className="fixed top-0 left-0 w-full py-8 px-24 flex justify-between items-center z-50 bg-white shadow-md">
-                <h2 className="text-2xl text-gray-700 cursor-default">
+            <header className="fixed top-0 left-0 w-full py-4 md:py-8 px-6 md:px-24 flex justify-between items-center z-50 bg-white shadow-md">
+                <h2 className="text-xl md:text-2xl text-gray-700 cursor-default">
                     <span className="text-purple-600">V</span>K
                 </h2>
-                <nav className="ml-[-300px]">
-                    <a href="#" className="text-lg text-gray-700 no-underline mr-10 font-medium transition duration-300 hover:text-purple-600">Home</a>
-                    <a href="#" className="text-lg text-gray-700 no-underline mr-10 font-medium transition duration-300 hover:text-purple-600">About</a>
-                    <a href="#" className="text-lg text-gray-700 no-underline mr-10 font-medium transition duration-300 hover:text-purple-600">Portfolio</a>
-                    <a href="#" className="text-lg text-gray-700 no-underline mr-10 font-medium transition duration-300 hover:text-purple-600">Blog</a>
-                    <a href="#" className="text-lg text-gray-700 no-underline mr-10 font-medium transition duration-300 hover:text-purple-600">Contact</a>
+                <nav className="hidden md:flex ml-[-300px]">
+                    <Link to="/" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600">Home</Link>
+                    <Link to="/about" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600">About</Link>
+                    <Link to="/projects" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600">Portfolio</Link>
+                    <Link to="/blog" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600">Blog</Link>
+                    <Link to="/contact" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600">Contact</Link>
                 </nav>
-                <a href="#" className="text-white no-underline py-2 px-14 bg-purple-600 rounded-lg border-2 border-purple-600 font-medium transition duration-300 hover:text-purple-600 hover:bg-transparent">Let's Talk</a>
+                <Link to="/contact" className="text-white no-underline py-1 md:py-2 px-6 md:px-14 bg-purple-600 rounded-lg border-2 border-purple-600 font-medium transition duration-300 hover:text-purple-600 hover:bg-transparent">Let's Talk</Link>
             </header>
 
-            <section className="relative w-full h-screen bg-cover bg-center flex items-center px-24" style={{ backgroundImage: "url('background.jpg')" }}>
-                <div className="max-w-xl text-gray-700">
-                    <h2 className="text-3xl"><span className="text-purple-600">Hi, I'm</span> Vincent Kurniawan</h2>
-                    <h4 className="text-2xl">Frontend Developer</h4>
-                    <p className="py-2 pb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. A esse totam provident voluptas similique. Impedit incidunt atque recusandae rem quam.</p>
-                    <div className="flex items-center">
-                        <a href="#" className="text-white no-underline py-2 px-10 bg-purple-600 rounded-lg border-2 border-purple-600 font-medium transition duration-300 hover:text-purple-600 hover:bg-transparent">Hire Me</a>
-                        <a href="#" className="text-purple-600 no-underline py-2 px-8 bg-transparent rounded-lg border-2 border-purple-600 font-medium transition duration-300 ml-7 hover:text-white hover:bg-purple-600">See Projects</a>
+            <section className="relative w-full h-screen bg-cover bg-center flex items-center px-6 md:px-24" style={{ backgroundImage: "url('background.jpg')" }}>
+                <div className="max-w-lg md:max-w-xl text-gray-700">
+                    <h2 className="text-2xl md:text-3xl"><span className="text-purple-600">Hi, I'm</span> Vincent Kurniawan</h2>
+                    <h4 className="text-xl md:text-2xl">Frontend Developer</h4>
+                    <p className="py-2 pb-6 md:pb-10 text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. A esse totam provident voluptas similique. Impedit incidunt atque recusandae rem quam.</p>
+                    <div className="flex flex-col md:flex-row items-center">
+                        <Link to="/hire-me" className="text-white no-underline py-1 md:py-2 px-6 md:px-10 bg-purple-600 rounded-lg border-2 border-purple-600 font-medium transition duration-300 hover:text-purple-600 hover:bg-transparent mb-2 md:mb-0">Hire Me</Link>
+                        <Link to="/projects" className="text-purple-600 no-underline py-1 md:py-2 px-6 md:px-8 bg-transparent rounded-lg border-2 border-purple-600 font-medium transition duration-300 ml-0 md:ml-7 hover:text-white hover:bg-purple-600">See Projects</Link>
                     </div>
-                    <div className="absolute bottom-12 flex">
-                        <a href="https://www.linkedin.com/in/vincent-kurniawan" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-purple-600 rounded-full mr-6 flex justify-center items-center border border-white outline outline-2 outline-purple-600 transition duration-300 hover:translate-y-[-5px]">
-                            <FaLinkedinIn className="text-white" />
+                    <div className="absolute bottom-8 md:bottom-12 flex space-x-4 md:space-x-6">
+                        <a href="https://www.linkedin.com/in/vincent-kurniawan" target="_blank" rel="noopener noreferrer" className="w-8 md:w-9 h-8 md:h-9 bg-purple-600 rounded-full flex justify-center items-center border border-white outline outline-2 outline-purple-600 transition duration-300 hover:translate-y-[-5px]">
+                            <FaLinkedinIn className="text-white text-sm md:text-base" />
                         </a>
-                        <a href="https://www.instagram.com/vincent__nwn" className="w-9 h-9 bg-purple-600 rounded-full mr-6 flex justify-center items-center border border-white outline outline-2 outline-purple-600 transition duration-300 hover:translate-y-[-5px]">
-                            <FaInstagram className="text-white" />
+                        <a href="https://www.instagram.com/vincent__nwn" className="w-8 md:w-9 h-8 md:h-9 bg-purple-600 rounded-full flex justify-center items-center border border-white outline outline-2 outline-purple-600 transition duration-300 hover:translate-y-[-5px]">
+                            <FaInstagram className="text-white text-sm md:text-base" />
                         </a>
                     </div>
                 </div>

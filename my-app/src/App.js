@@ -1,21 +1,17 @@
 import React from 'react';
-import Header from './components/Header';
-import About from './components/About';
-import Projects from './components/Projects';
-import Blog from './components/Blog';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Landing from './components/Landing';
 import { useAnimations } from './animations';
 
 function App() {
-
-  return (
-    <div className="App">
-      <Landing />
-      
-    </div>
-  );
+    return (
+        <Router>
+            <div className="App">
+                <Routes>
+                    <Route exact path="/" element={<Landing />} />
+                </Routes>
+            </div>
+        </Router>
+    );
 }
-
 export default App;
