@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import about from './About';
 
 const Landing = () => {
     return (
