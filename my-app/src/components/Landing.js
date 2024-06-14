@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import backgroundImage from './background.jpg';
+
 
 const Landing = () => {
-    const backgroundImage = require('./background.jpg');
+    
     return (
         <div>
             <header className="fixed top-0 left-0 w-full py-4 md:py-8 px-6 md:px-24 flex justify-between items-center z-50  ">
