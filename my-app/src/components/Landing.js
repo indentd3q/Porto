@@ -6,7 +6,9 @@ import { FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 const Landing = () => {
     
     return (
-        <div>
+        <div style={{
+            backgroundImage: 'linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)',
+          }}>
             <header className="fixed top-0 left-0 w-full py-4 md:py-8 px-6 md:px-24 flex justify-between items-center z-50">
             <h2 className="text-xl md:text-2xl text-gray-700 cursor-default">
                 <span className="text-purple-600">V</span>K

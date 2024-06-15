@@ -19,7 +19,13 @@ const blogPosts = [
 ];
 
 const Blog = () => (
-  <section id="blog" className="bg-white py-20">
+  <section
+    id="blog"
+    className="bg-white py-20"
+    style={{
+      backgroundImage: 'linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)',
+    }}
+  >
     <div className="container mx-auto">
       <button 
         onClick={() => window.history.back()} 
