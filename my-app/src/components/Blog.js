@@ -21,6 +21,12 @@ const blogPosts = [
 const Blog = () => (
   <section id="blog" className="bg-white py-20">
     <div className="container mx-auto">
+      <button 
+        onClick={() => window.history.back()} 
+        className="mb-4 py-2 px-4 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+      >
+        Go Back
+      </button>
       <h2 className="text-4xl font-bold text-center mb-12">Vincent's Blog</h2>
       <div className="flex flex-wrap justify-center">
         {blogPosts.map((post) => (
