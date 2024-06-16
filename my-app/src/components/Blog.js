@@ -15,7 +15,48 @@ const blogPosts = [
     image: "blog2.jpg",
     link: "#",
   },
-  // Add more blog posts here
+  {
+    id: 3,
+    title: "Blog Post 2",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.",
+    image: "blog2.jpg",
+    link: "#",
+  },
+  {
+    id: 4,
+    title: "Blog Post 2",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.",
+    image: "blog2.jpg",
+    link: "#",
+  },
+  {
+    id: 5,
+    title: "Blog Post 2",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.",
+    image: "blog2.jpg",
+    link: "#",
+  },
+  {
+    id: 6,
+    title: "Blog Post 2",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.",
+    image: "blog2.jpg",
+    link: "#",
+  },
+  {
+    id: 7,
+    title: "Blog Post 2",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.",
+    image: "blog2.jpg",
+    link: "#",
+  },
+  {
+    id: 8,
+    title: "Blog Post 2",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.",
+    image: "blog2.jpg",
+    link: "#",
+  },
 ];
 
 const Blog = () => (
@@ -33,7 +74,7 @@ const Blog = () => (
       >
         Go Back
       </button>
-      <h2 className="text-4xl font-bold text-center mb-12">Vincent's Blog</h2>
+      <h2 className="text-4xl font-bold text-center mb-12 text-purple-600">Vincent's Blog</h2>
       <div className="flex flex-wrap justify-center">
         {blogPosts.map((post) => (
           <div key={post.id} className="blog-post w-full sm:w-1/2 md:w-1/3 xl:w-1/4 p-4">
