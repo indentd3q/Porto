@@ -22,17 +22,25 @@ const About = () => {
             <div className="w-32 h-32 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 p-1">
               <div className="w-full h-full rounded-full overflow-hidden">
                 <img
-                  src="/api/placeholder/128/128"
-                  alt="Profile"
+                  src="/images/profile.jpg" 
+                  alt="Vincent Kurniawan"
                   className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.onerror = null; 
+                    e.target.src = '/images/default-avatar.png'; 
+                  }}
                 />
               </div>
             </div>
+            {/* Optional: Add a decorative element */}
+            <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-xl">
+              ✨
+            </div>
           </div>
           <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Aing Suree
+            Vincent Kurniawan
           </h1>
-          <p className="text-gray-600 text-lg">Creative Developer & Digital Artist</p>
+          <p className="text-gray-600 text-lg">Data Enthusiast & Front-end Developer</p>
         </div>
 
         {/* Navigation Tabs */}
@@ -56,11 +64,10 @@ const About = () => {
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-12">
           {activeSection === 'intro' && (
             <div className="space-y-6">
-              <h2 className="text-2xl font-bold text-gray-800">Hello World! 👋</h2>
+              <h2 className="text-2xl font-bold text-gray-800">Hello Everyone👋</h2>
               <p className="text-gray-600 leading-relaxed">
                 I'm a passionate creator who believes in the power of technology and art to make the world a better place. 
-                When I'm not coding or designing, you'll find me exploring new coffee shops, capturing moments through my 
-                camera lens, or working on my latest side project.
+                When I'm not coding or designing, you'll find me sipping on a cup of coffee, reading a good book, or maybe playing with random cat in the neighborhood.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
                 {interests.map((interest, index) => (
@@ -82,7 +89,7 @@ const About = () => {
               <div className="space-y-4">
                 <div className="border-l-4 border-blue-500 pl-4">
                   <h3 className="text-lg font-semibold text-gray-800">2024 - Present</h3>
-                  <p className="text-gray-600">Senior Creative Developer at Future Corp</p>
+                  <p className="text-gray-600">Research Assistant of Predictive modelling</p>
                 </div>
                 <div className="border-l-4 border-purple-500 pl-4">
                   <h3 className="text-lg font-semibold text-gray-800">2022 - 2024</h3>
@@ -103,8 +110,9 @@ const About = () => {
                 {[
                   { name: 'React', level: 90 },
                   { name: 'UI/UX Design', level: 85 },
-                  { name: 'Node.js', level: 80 },
-                  { name: 'Photography', level: 75 },
+                  { name: 'Python', level: 80 },
+                  { name: 'Data Visualization', level: 80 },
+                  { name: 'Data Analyst', level: 85 },
                 ].map((skill) => (
                   <div key={skill.name} className="space-y-2">
                     <div className="flex justify-between">
