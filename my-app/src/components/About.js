@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Camera, Code, Coffee, Heart, Music, Palette } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
   const [activeSection, setActiveSection] = useState('intro');
+  const navigate = useNavigate();
 
   const interests = [
     { icon: <Code className="w-6 h-6" />, label: 'Coding', color: 'text-blue-500' },
@@ -14,8 +16,16 @@ const About = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-white to-gray-100 py-20 px-4">
-      <div className="max-w-4xl mx-auto">
+    <section className="min-h-screen py-20 px-4" style={{ backgroundImage: 'linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)' }}>
+      <div className="max-w-4xl mx-auto relative">
+        {/* Back Button */}
+        <button
+          onClick={() => navigate(-1)}
+          className="absolute top-0 left-0 bg-white text-gray-600 px-6 py-2 rounded-full hover:bg-gray-100 transition-all shadow-md"
+        >
+          ← Back
+        </button>
+
         {/* Header Section */}
         <div className="text-center mb-16 space-y-4">
           <div className="relative inline-block">
