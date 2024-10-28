@@ -16,7 +16,7 @@ const Landing = () => {
             <nav className="hidden md:flex ml-[-300px]">
                 <Link to="/" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600 hover:-translate-y-0.5">Home</Link>
                 <Link to="/about" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600 hover:-translate-y-0.5">About</Link>
-                <Link to="/projects" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600 hover:-translate-y-0.5">Portfolio</Link>
+                <Link to="/porto" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600 hover:-translate-y-0.5">Portfolio</Link>
                 <Link to="/blog" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600 hover:-translate-y-0.5">Blog</Link>
                 <Link to="/contact" className="text-sm md:text-lg text-gray-700 no-underline mr-4 md:mr-10 font-medium transition duration-300 hover:text-purple-600 hover:-translate-y-0.5">Contact</Link>
             </nav>
