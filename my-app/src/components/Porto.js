@@ -49,10 +49,10 @@ const HeroSection = ({ isVisible, scrollToSection }) => (
     <div className="max-w-4xl mx-auto">
       <div className={`space-y-6 transform transition-all duration-1000 ${isVisible['hero'] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
         <h1 className="text-4xl md:text-6xl font-bold">
-          Hi, I'm <span className="text-yellow-300 hover:text-yellow-200 transition-colors cursor-pointer">Your Name</span>
+          Hi, I'm <span className="text-yellow-300 hover:text-yellow-200 transition-colors cursor-pointer">Vincent Kurniawan</span>
         </h1>
         <p className="text-lg md:text-xl opacity-90 leading-relaxed">
-          Full Stack Developer | UI/UX Enthusiast | Problem Solver
+          Front End Developer | UI/UX Enthusiast | Data Enthusiast
         </p>
         <div className="flex gap-6">
           <a href="#" className="p-2 hover:text-yellow-300 transition-all transform hover:scale-110">
