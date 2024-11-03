@@ -4,6 +4,7 @@ import Landing from './components/Landing';
 import About from './components/About';
 import Blog from './components/Blog';
 import Porto from './components/Porto';
+import Project from './components/Projects';
 import { useAnimations } from './animations';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/porto" element={<Porto />} />
+                    <Route path="/projects" element={<Project />} />
                 </Routes>
             </div>
         </Router>
