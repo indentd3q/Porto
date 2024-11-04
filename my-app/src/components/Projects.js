@@ -59,7 +59,7 @@ const Projects = () => {
     : projects.filter(project => project.category === selectedCategory);
 
   return (
-    <section id="projects" className="bg-gradient-to-b from-gray-50 to-gray-100 py-20">
+    <section className="min-h-screen py-20 px-4" style={{ backgroundImage: 'linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)' }}>
       <div className="container mx-auto px-4">
         <button
           onClick={() => navigate(-1)}
