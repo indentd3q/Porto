@@ -14,7 +14,7 @@ const About = () => {
     { icon: <Palette className="w-6 h-6" />, label: 'Art', color: 'text-pink-500' },
     { icon: <Heart className="w-6 h-6" />, label: 'Travel', color: 'text-red-500' },
   ];
-
+    
   return (
     <section className="min-h-screen py-20 px-4" style={{ backgroundImage: 'linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)' }}>
       <div className="max-w-4xl mx-auto relative">
